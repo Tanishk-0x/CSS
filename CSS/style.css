@@ -1,0 +1,122 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    color: white;
+}
+
+.container{
+    min-height: 100vh;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 20px;
+    background: linear-gradient(to right , rgb(14, 0, 61) , rgb(0, 0, 130) , rgb(10, 0, 192) );
+}
+
+
+.left-text{
+    flex-basis: 30%;
+}
+
+
+.gallery{
+    flex-basis: 50%;
+    display: grid;
+    gap: 8px;
+    grid-template-columns: repeat(3 , 1fr);
+    grid-auto-rows: 120px;
+}
+
+.box{
+    background-size: cover;
+    background-position: top;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #222;
+    background-blend-mode: color-dodge;
+    transition: all 1s ease-in-out;
+}
+
+
+.box:hover{
+    background-color: #0e0030;
+    background-position: center;
+}
+
+.row-2{
+    grid-row: span 2;
+}
+
+.col-2{
+    grid-column: span 2 ;
+}
+
+.heading{
+    font-size: 48px;
+}
+
+.subheading{
+    font-size: 18px;
+    color: rgb(255, 255, 255);
+}
+
+
+
+/* //------------------- media query --------------------------- */
+/*
+    syntax --- 
+    @media screen and ( condition ) { --- } 
+    @media ( condition ) { ---- } 
+    @media ( condition-1 ) and ( condition-2 ) { --- } 
+    @media ( 400px <= width <= 600px ) { --- } 
+
+   orientation : potrait ; 
+   width : 200px ; 
+   width <= 400px ; 
+   max-width: 300px ; // upto 
+   min-width: 200px ; // starting from 
+
+
+   --------- screen - size ----------- : 
+    small = 640px ; 
+    medium = 768px ; 
+    large = 1024px ; 
+    x large = 1280px ; 
+    2x large = 1536px ; 
+
+
+*/
+
+
+@media screen and (max-width: 1024px) {
+    
+    .container{
+        flex-direction: column;
+    }
+
+    .gallery{
+        width: 100%;
+    }
+
+    .box{
+        grid-row: span 1 ;
+        grid-column: span 3 ;
+    }
+
+    .heading{
+        font-size: 30px;
+    }
+
+    .subheading{
+        font-size: 12px;
+    }
+
+
+
+}

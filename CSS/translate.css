@@ -1,0 +1,98 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    width: 800px;
+    height: 400px;
+    background-color: rgb(197, 197, 197);
+    margin: 80px auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    border-radius: 20px;
+    border: 2px solid red;
+}
+
+/* 
+
+    Scale = kisi bhi particular div ko scale kr sakte he X ya Y direction me 
+    scaleX() , scaleY() , scaleZ() 
+    skew = used to tilt an element is X and Y axis 
+    translate = previuos location ki reference me move krta he 
+    rotate = rotate krne ke liye rotate(degree) ... 
+
+*/
+
+
+.box1 {
+    width: 200px;
+    height: 200px;
+    font-size: 4rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(126, 59, 251);
+    color: white;
+
+    /* transform: scaleX(2) scaleY(1.5); */
+    /* transform: skew(20deg); */
+    /* transform: translate(50% , 50%); */
+    /* transform: rotate(120deg); */
+
+    /* transform-origin:  10px; */
+
+    transition: 0.5s ease;
+    border-radius: 50%;
+}
+
+
+.box2 {
+    width: 200px;
+    height: 200px;
+    font-size: 4rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(39, 255, 50);
+    color: white;
+    transition: 0.5s ease;
+    border-radius: 50%;
+}
+
+
+
+.box3 {
+    width: 200px;
+    height: 200px;
+    font-size: 4rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(251, 235, 59);
+    color: white;
+    transition: 0.5s ease;
+    border-radius: 10%;
+}
+
+.box1:hover {
+    transform: rotate(120deg);
+    background-color: red;
+    cursor: pointer;
+}
+
+.box2:hover {
+    transform: translate(70px ,90px);
+    background-color: lightcoral;
+    cursor: pointer;
+}
+
+.box3:hover {
+    transform: skew(20deg);
+    background-color: lightskyblue;
+    cursor: pointer;
+}

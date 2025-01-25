@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Variables-css</title>
+    <link rel="stylesheet" href="CSS/variable.css">
+    
+</head>
+<body>
+
+        <div class="container">
+
+            <button onclick="change()" id="btn">Click me</button>
+
+            <h1>inside container</h1>
+
+            <div class="box">
+                <h2>Hills</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto eveniet, id excepturi, asperiores maxime officia provident nihil ut harum placeat voluptatum totam ea aspernatur! Corrupti cum quo similique quam nisi?</p>
+            </div>
+
+            <div class="box">
+                <h2>Mountains</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto eveniet, id excepturi, asperiores maxime officia provident nihil ut harum placeat voluptatum totam ea aspernatur! Corrupti cum quo similique quam nisi?</p>
+            </div>
+
+            <div class="box">
+                <h2>Occeans</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto eveniet, id excepturi, asperiores maxime officia provident nihil ut harum placeat voluptatum totam ea aspernatur! Corrupti cum quo similique quam nisi?</p>
+            </div>
+
+        </div>
+
+<script>
+
+    let btn = document.getElementById("btn") ; 
+
+    function change() {
+        document.body.classList.add('dark')
+    }
+
+</script>
+
+    
+</body>
+</html>

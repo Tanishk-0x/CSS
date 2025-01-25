@@ -1,0 +1,69 @@
+
+body {
+    margin: 0;
+    background-color: teal;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.container {
+    width: 300px;
+    height: 300px;
+    border: 2px solid white;
+}
+
+
+.box {
+    width: 100px;
+    height: 100px;
+    background-color: white;
+
+  /* // --------- applying animation to the elements ------------ */
+    
+    animation-name: circles;
+    animation-duration: 3s;
+    animation-delay: 2s;
+    animation-iteration-count: 4;
+    animation-direction: normal;
+
+  /* // --------- applying animation to the elements ------------ */
+
+}
+
+
+/*  
+ -> animation-name : name to add animation into element 
+ -> animation-duration : kitni der chalni chahiye 
+ -> animation-delay : kitne dalay ke baad animation chalna chahiye
+ -> animation-iteration-count : kitne baar animation chalegi 
+ -> animation-direction : spacifies direction of the animation 
+ -> animation-fill-Mode : ye batata he ki jab start ho rhi he to element kha par honi chahhiye aur end ho rhi he to element kha per hona chahiye 
+*/ 
+
+
+/* //----------- KEYFRAMES --------------------- */
+
+@keyframes circles {
+    
+    0% {
+        transform: translate(0 , 0);
+    }
+
+    25% {
+        transform: translate(200px , 0);
+    }
+
+    50% {
+        transform: translate(200px , 200px);
+    }
+
+    75% {
+        transform: translate(0 , 200px);
+    }
+
+}
+
+

@@ -1,0 +1,128 @@
+/* *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+} */
+
+body{
+    padding: 40px;
+}
+
+/* //---------- anchor tag properties / state -------------
+# pseudo class : 
+
+-> :hover = jab mouse hovered hoga 
+-> :link = jab click nhi kra he 
+-> visited = jab link per click kr diya he jab visit kr lenge 
+-> active = jaise hi click kra 
+
+-> FIRST CHILD = pehla child lake dedeta he (to select first child) 
+
+-> Nth child = ( an+b ) , 
+-> 2n = even positions 
+
+-> pseudo element = the specific part ko slect krte he 
+pseudo element :: 
+
+-> ::first-letter = to access the first letter of the elements 
+-> :: selection = jo select krte he usko bhi change kr sakte he 
+-> ::first-line = to select the first line of the elements 
+-> ::before = usse pehle ko select krne ke liye .. 
+-> ::after = uske baad ko select krne ke liye .. 
+
+*/
+
+
+.primary-btn:link{
+    color: green;
+    background-color: orangered;
+    padding: 18px;
+}
+
+
+.primary-btn:visited{
+    color: blue;
+    background-color: lightcoral;
+}
+
+
+.primary-btn:hover{
+    color: rgb(255, 72, 0);
+    background-color: yellow;
+}
+
+
+.primary-btn:active{
+    color: yellow;
+    background-color: blue;
+}
+
+
+/* ul li:first-child{
+    background-color: orangered;
+    color: greenyellow;
+} */
+
+ul li:nth-child(2n) {
+    background-color: rgb(101, 101, 101);
+    color: pink;
+}
+
+
+/* //----------- pseudo elements ---------------  */
+/* ek specific part ko select krne ke liye ...  */
+
+
+h2::first-letter {
+    background-color: red;
+    color: yellow;
+    font-size: 3rem;
+}
+
+/* // ------ selection ----------------  */
+
+::selection {
+    color: greenyellow;
+    background-color: black;
+}
+
+/* // ------ selection ----------------  */
+
+
+h3{
+    color: rgb(72, 0, 255);
+}
+
+
+p::first-line{
+    color: rgb(0, 255, 247);
+    background-color: rgb(230, 0, 255);
+}
+
+
+/* // -------- before and after -------------  */
+
+h3::before{
+    content: 'Jo chij before dalni he ... ';
+    color: green;
+}
+
+
+h3::after {
+    content: '    jo chij baad me dalni he ... ';
+    color: green;
+}
+
+
+
+.required::after {
+    content: ' * ';
+    color: red;
+}
+
+.important::after {
+    content: 'important!';
+    background-color: yellow;
+    color: black;
+    padding: 2px;
+}

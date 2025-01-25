@@ -1,0 +1,67 @@
+*{
+    margin: 0;
+    padding: 0 ; 
+    box-sizing: border-box;
+}
+
+
+body{
+    display: flex;
+    justify-content: center;
+}
+
+/* // --- global declaration of variable --------------  */
+:root{
+    --myh2color : rgb(208, 208, 208) ; 
+    --myh1color : rgb(192, 192, 192) ; 
+    --myboxcolor: rgb(255, 179, 179) ; 
+    --myContainer: rgb(255, 255, 255) ; 
+    --color: white ; 
+
+}
+
+
+.dark{
+    --myh2color : rgb(207, 207, 207) ; 
+    --myh1color : rgb(89, 89, 89) ; 
+    --myboxcolor: rgb(102, 102, 102) ; 
+    --myContainer: rgb(43, 43, 43) ; 
+}
+
+.container{
+    width: 350px;
+    padding: 40px;
+    background-color: var(--myContainer);
+    gap: 10px;
+    display: flex;
+    justify-content: center;
+    align-self: center;
+    flex-direction: column;
+    border: 2px solid greenyellow;
+    border-radius: 7px;
+    margin-top: 50px;
+}
+
+
+
+h1{
+    text-align: center;
+    background-color: var(--myh1color);
+    color: var(--color);
+}
+
+h2 {
+    margin-bottom: 20px;
+    background-color: var(--myh2color);
+}
+
+.box{
+
+    padding: 20px;
+    background-color: var(--myboxcolor);
+    width: 250px;
+    height: 150px;
+    font-size: 10px;
+    margin-top: 10px;
+    border-radius: 8px;
+}

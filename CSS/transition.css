@@ -1,0 +1,73 @@
+/* *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+} */
+
+
+.box {
+    margin: 100px auto;
+    width: 200px;
+    height: 200px;
+    background-color: orangered;
+    /* transition: 0.5s; */
+
+/* //----------- transitions ---------------------------  */
+    
+    transition-duration: 1s ;
+    transition-property: all ;
+    transition-delay: 0.1s; 
+    transition-timing-function: ease ;
+
+/* //----------- transitions ---------------------------  */
+
+    
+}
+
+.box:hover {
+    background-color: greenyellow;
+    border-radius: 50%;
+    cursor: pointer;
+    transform: rotate(180deg);
+}
+
+
+/*  
+
+    transition = smoothly change ke liye use krte he 
+    {transition : duration ; }  
+
+    -> transition-duration = kitna time lagega transition me 
+    -> transition-property = specify krte he ki konsi property ke andar transition krna he 
+    -> transition-delay = kitna der baad transition start hogi 
+    -> transition-timing-function = kis tarah se A point se B point pe jaa rhe ho . speed ky ahe aur konsa rasta chuna he 
+
+    : ease-in = start slow 
+    -> ease = slow start then fast then end slowly 
+    -> linear = same speed from start to end 
+    -> ease-out = slow end 
+    -> ease-in-out = slow start and end 
+    -> cubic-bezier(n,n,n,n) = let define your own values 
+
+*/
+
+.list {
+    display: flex;
+    gap: 30px;
+    list-style: none;
+}
+
+.items {
+    font-size: 2rem;
+    padding: 8px 16px ;
+    transition: 0.5s ;
+    background-color: gray;
+    color: black;
+}
+
+.items:hover {
+    cursor: pointer;
+    background-color: skyblue;
+    color: blue;
+    transform: skew(30deg);
+}
